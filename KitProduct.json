@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "name":"White Kitchen",
+        "price": 500,
+        "image": "imges/Kitchen1.jpg"
+    },
+    {
+        "id": 2,
+        "name":"Iron Chair",
+        "price": 100,
+        "image": "imges/Kitchen2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Yellow Light",
+        "price": 150,
+        "image": "imges/Kitchen3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Long Plant",
+        "price": 50,
+        "image": "imges/Kitchen4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Coffe Machine",
+        "price": 300,
+        "image": "imges/Kitchen5.jpg"
+    },
+    {
+        "id": 6,
+        "name":"Small Plant",
+        "price": 35,
+        "image": "imges/Kitchen6.jpg"
+    }
+    
+]
+

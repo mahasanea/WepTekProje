@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name":"LOUNGE CHAIR",
+        "price": 200,
+        "image": "imges/FeaturedProd1.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Wooden Shelf",
+        "price": 250,
+        "image": "imges/furniture2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Pillows",
+        "price": 290,
+        "image": "imges/FeaturedProd3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Long Sofa",
+        "price": 200,
+        "image": "imges/furniture4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Classic Sofa",
+        "price": 300,
+        "image": "imges/furniture5.jpg"
+    },
+    {
+        "id": 6,
+        "name":"White Chair",
+        "price": 150,
+        "image": "imges/FeaturedProd5.jpg"
+    }
+    
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "name":"Circular Mirror",
+        "price": 266,
+        "image": "imges/pathroom1.jpg"
+    },
+    {
+        "id": 2,
+        "name":"Turquoise Marble",
+        "price": 260,
+        "image": "imges/pathroom2.jpg"
+    },
+    {
+        "id": 3,
+        "name":"Circular Pathtub",
+        "price": 150,
+        "image": "imges/pathroom3.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Large Window",
+        "price": 60,
+        "image": "imges/pathroom4.jpg"
+    },
+    {
+        "id": 5,
+        "name":"Large Pathtub",
+        "price": 500,
+        "image": "imges/pathroom5.jpg"
+    },
+    {
+        "id": 6,
+        "name":"Glass bathtub",
+        "price": 200,
+        "image": "imges/pathroom6.jpg"
+    }
+    
+]
+

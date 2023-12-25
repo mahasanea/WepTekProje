@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+ 
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ 
+/*clock=====================================================*/
+
+.clock-head{
+  width: 100%;
+  min-height: 25px;
+  background: #FBFBF9;
+  position: relative;
+  color: #445E5B;
+}
+.clock-container{
+  width: 8%;
+  height: 20px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.clock
+          {
+            width: 100%;
+            height: 100%;
+            /*background:rgba(39, 95, 76, 0.24);*/
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(40px);
+          }
+      
+/*==========================================================*/
+/** Navbar _________________________________________________*/
+.navbar{
+     background-color: #FBFBF9;
+}
+
+.navbar-nav{
+  margin-right: 45px ;
+}
+
+
+/*_________________________________________________________*/
+
+/** Navbar logo img ______________________________________________ **/
+img {
+    height: 300px;
+    width: auto;
+}
+
+@media screen and (max-width:800px){
+  img { 
+   height: 200px;
+   max-width: 35%;
+      }
+}
+
+/*________________________________________________________**/
+
+
+/** ( kayan metin )Sliding Announcement Bar Text : ______**/
+
+.custom-marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 43px;
+    overflow-x: hidden;
+    background:#718E8B; 
+    color:#F3F3F3; 
+  }
+  .custom-marquee a {
+    color:#F3F3F3; 
+  }
+  .custom-marquee .track {
+      position: absolute;
+      bottom: 6px;
+      white-space: nowrap;
+      will-change: transform;
+      animation: marquee 8s linear infinite;
+  }
+  .custom-marquee .content {
+    margin-left: 40px;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-30%);
+    }
+  }
+
+  /**________________________________________________________**/
+
+
+  /* Banner img styling ______________________________________*/
+  .banner-area {
+    background-image: url(imges/banner-area.jpg);
+    background-size: cover;
+    height: auto;
+    background-position: center center; /** to centring th img and showing all its sides**/
+    height: 500px;
+    
+  }
+
+  /*_______________________________________________________*/
+
+
+  /* AboutUs Card KISMI ___________________________________________*/
+
+  .card{
+    width: 55%;
+    /*position: absolute;*/
+    left: 50%; 
+    top: 120px;
+    transform: translate(-50%,-50%); /*to centering the card*/
+  }
+
+  .card-title{
+    text-align: center;
+    padding-top: 55px;
+    color: #445E5B;
+  }
+  .card-text{
+    text-align: center;
+   color: #445E5B;
+  }
+
+  @media screen and (max-width:1460px){
+    .col-md-4 {
+      padding-top: 30px;
+     }
+  }
+
+  @media screen and (max-width:1210px){
+    .col-md-4 {
+      padding-top: 70px;
+     }
+  }
+
+  @media screen and (max-width:1050px){
+    .card { 
+      width: 70%;
+     position: absolute ;
+      left: 50%; 
+      top: 160px;
+      transform: translate(-50%,-50%);
+    
+          }
+    .card-title {
+      padding-top: 30px;
+    }      
+
+    .col-md-4 {
+     padding-top: 30px;
+    }
+  }
+
+  @media screen and (max-width:836px){
+    .card { 
+      width: 50%;
+     position: absolute ;
+      left: 50%; 
+      top: 165px;
+      transform: translate(-50%,-50%);
+      display: flex;
+    
+          }
+
+    .col-md-4 {
+            padding-top: 100px;
+           }
+           
+  }
+
+
+  @media screen and (max-width:760px){
+    .card { 
+      width: 55%;
+      display: inline-block;
+     position: absolute ;
+      left: 50%; 
+      top: 375px;
+      transform: translate(-50%,-50%);
+    
+          }
+
+          .card-title {
+            padding-top: 0px;
+          }  
+
+          .col-md-4 {
+            padding-top: 0px;
+           }
+
+           .card-text{
+            padding-bottom: 10px;
+           
+          }
+  }
+
+  @media screen and (max-width:250px){
+    .card { 
+      width: 55%;
+      display: inline-block;
+     position: absolute ;
+      left: 50%; 
+      top: 375px;
+      transform: translate(-35%,-35%);
+    
+          }
+
+          .card-title {
+            padding-top: 0px;
+          }  
+
+          .col-md-4 {
+            padding-top: 0px;
+           }
+
+           .card-text{
+            padding-bottom: 10px;
+           
+          }
+  }
+
+  @media screen and (max-width:166px){
+    .card { 
+      width: 55%;
+      display: inline-block;
+     position: absolute ;
+      left: 50%; 
+      top: 375px;
+      transform: translate(-20%,-20%);
+    
+          }
+
+          .card-title {
+            padding-top: 0px;
+          }  
+
+          .col-md-4 {
+            padding-top: 0px;
+           }
+
+           .card-text{
+            padding-bottom: 10px;
+           
+          }
+  }
+
+  @media screen and (max-width:120px){
+    .card { 
+      width: 55%;
+      display: inline-block;
+     position: absolute ;
+      left: 50%; 
+      top: 375px;
+      transform: translate(-5%,-5%);
+    
+          }
+
+          .card-title {
+            padding-top: 0px;
+          }  
+
+          .col-md-4 {
+            padding-top: 0px;
+           }
+
+           .card-text{
+            padding-bottom: 10px;
+           
+          }
+  }
+
+  /*_______________________________________________________*/
+
+
+  /* SlideShow ___________________________________________*/
+  /*
+  .slider{
+    width: 100%;
+    height: 400px;
+    overflow:visible;
+    padding-top: 35px;
+}
+
+figure{
+    position: relative;
+    left: 0;
+    width: 400%; /* width dikali slide 
+    animation: 10s slide infinite;
+}
+
+.slide{
+    position: relative;
+    width: 25%; /* width dibagi slide 
+    float: left;
+}
+
+/*.slide h1{
+    position: absolute;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slide img{
+    width: 100%;
+    height:400px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1050px)
+{
+  .slider { 
+    padding-top: 100px;
+  
+        }
+        
+}
+
+@media screen and (max-width:800px){
+
+  .slider{
+    width: 300%;
+    height: 100px;
+    padding-top: 150px;
+  }
+.slide img{
+  width: 100%;
+  height:300px;
+  object-fit: cover;
+}
+figure{
+  
+  left: 0;
+  width: 1000%; /* width dikali slide 
+  
+}
+.slide{
+  position: relative;
+  width: 10%; /* width dibagi slide 
+}
+}
+
+@media screen and (min-width:850px){
+
+  .slider{
+    width: 100%;
+    height: 300px;
+    padding-top: 100px;
+  }
+
+.slide img{
+  width: 100%;
+  height:400px;
+  object-fit: cover;
+}
+figure{
+  
+  left: 0;
+  width: 1000%; /* width dikali slide 
+  
+}
+
+.slide{
+  position: relative;
+  width: 10%; /* width dibagi slide 
+}
+
+}
+@media screen and (max-width:430px){
+
+
+  .slider{
+    width: 300%;
+    height: 100px;
+    padding-top: 100px;
+  }
+
+.slide img{
+  width: 100%;
+  height:200px;
+  object-fit: cover;
+}
+figure{
+  
+  left: 0;
+  width: 1000%; /* width dikali slide 
+  
+}
+
+.slide{
+  position: relative;
+  width: 10%; /* width dibagi slide 
+}
+
+}
+
+@keyframes slide{
+  0%{
+      left:0;
+  }
+  10%{
+      left:0;
+  }
+  20%{
+      left:-100%;
+  }
+  30%{
+      left:-100%;
+  }
+  40%{
+      left:-200%;
+  }
+  50%{
+      left:-200%;
+  }
+  55%{
+      left:-300%;
+  }
+  65%{
+      left:-300%;
+  }
+  70%{
+      left:-200%;
+  }
+  80%{
+      left:-200%;
+  }
+  90%{
+      left:-100%;
+  }
+  95%{
+      left:-100%;
+  }
+  100%{
+      left:0;
+  }
+  1000%{
+      left:0;
+  }
+}
+
+/*_______________________________________________________*/
+
+/* Featured Product ___________________________________________*/
+
+.wrapper{
+  width:100%;
+  padding-top: 20px;
+  padding-bottom:5rem;
+  text-align:center;
+}
+
+h2{
+  font-family:sans-serif;
+  color:#fff;
+}
+.carousel{
+  width:90%;
+  margin:0px auto;
+}
+
+
+.slick-slide{
+  margin:4px;
+}
+.slick-slide img{
+  width:100%;
+}
+.slick-prev, .slick-next{
+  background: #000;
+  border-radius: 15px;
+  border-color: transparent;
+}
+.card-2{
+  border: 2px solid #fff;
+  box-shadow: 1px 1px 15px #ccc;
+}
+.card-body{
+  background: #fff;
+  width: 100%;
+  vertical-align: top;
+}
+.card-content{
+  text-align: center;
+  color: #333;
+  padding: 10px;
+}
+.card-title2{
+  color: #445E5B;
+}
+.card-text2{
+  font-size: 14px;
+  font-weight: 100;
+  color: #445E5B;
+}
+
+@media only screen and (max-width: 799px) {
+  .wrapper .carousel img {
+    max-width: 100%;
+    height: 250px;
+    margin: 0 auto;
+  }
+}
+
+
+/*====================================================*/
+
+/* Advantages-area ===================================*/
+
+
+.Advantages-area 
+{
+  background-image: url(imges/Advaneges2.jpg);
+  background-size: cover;
+  height: 200px;
+  background-position: center center;
+
+}
+
+/*====================================================*/
+
+/*collab ============================================*/
+
+.container {
+  max-width: 80rem;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.main .accordion {
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 5rem 0 2rem 0;
+}
+.main .accordion-item {
+  padding: 0.5rem 0;
+  margin: 0;
+  overflow: auto;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: #849F9D;
+  box-shadow: 3.5px 3.5px 10px  #718E8B;
+}
+.main .accordion-item .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+  font-size: medium;
+  font-weight: 350;
+  line-height: inherit;
+  cursor: pointer;
+  color: #fff;
+}
+
+.main .accordion-item .title .fa-regular
+{
+  margin-left: 10px;
+}
+.main .accordion-item .title i.fas {
+  font-size: 0.9rem;
+  color: #fff;
+  transform: translateX(-50%) rotate(0);
+  transition: transform 0.15s ease;
+}
+.main .accordion-item .paragraph {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: inherit;
+  color: #fff;
+  display: none;
+  padding: 1rem 0;
+  margin: 10px;
+}
+.main .accordion-item.active .title i.fas {
+  transform: translateX(-50%) rotate(180deg); /*moving the fas to the up*/
+}
+.main .accordion-item.active .paragraph {
+  display: inline; /*allow the text to be visiable*/
+}
+
+@media only screen and (max-width: 768px) {
+  .main .accordion {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/*=======================================================*/
+
+/* form kismi =========================================*/
+
+.form-container button{
+  background: transparent;
+  border: 1px solid #445E5B;
+  border-radius: 10px;
+  width:26.5%;
+  height: 3rem;
+  display: block;
+  margin: auto;
+}
+
+/* footer =============================================*/
+
+.Footer {
+  padding-top: 3rem;
+  height: 16.5rem;
+  background-color: #edeeee;
+  color: #445E5B;
+  box-shadow: 0px 3.5px 25.5px #edeeee ;
+}
+
+.Footer ul {
+ text-decoration: none;
+ color: #445E5B;
+ display: block;
+ list-style-type: none;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+}
+
+.Footer a {
+ margin: 10px;
+ text-decoration: none;
+ color: #445E5B;
+}
+
+.Footer a:hover {
+  color: #849F9D;
+}
+
+@media screen and (max-width: 749px){
+.Footer {
+    text-align: left;
+}
+}
+
+.payment-method  {
+  display: inline-flex ;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.payment-method img{
+  height: 50px;
+}
+
+.footer-copyright .copyright{
+  text-align: center;
+  font-size: small;
+  margin-top: 1.5rem;
+  color: rgb(145, 144, 144);
+}

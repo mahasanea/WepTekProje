@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <title>River | Questionnaire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+
+<!-- Page Title -->
+<div class="Page-Title">  
+    <h2 style="text-align: left;">  Questionnaire Form </h2>
+   </div>
+  
+<!-- Form Kismi -->   
+
+      <main>
+    <div>
+    <form class="questionnaire" action="">
+        <h5 id="title" style="margin:  20px ;" >Fill out the questionnaire to get 20% gift discount :</h5>
+   <!--<div class="form-group">
+      <label for "name" id="name-label">Name</label><br><input type="text" id="name" name="name" placeholder="Enter your name"       required=required>
+    </div>
+      <div class="form-group">
+      <label for "email" id="email-label">Email</label><br><input  type="email" id="email" name="email" placeholder="Enter your Email" required=required>
+    </div> --> 
+
+        <div class="form-group">
+            <p>Which devices have you used for online courses? </p>
+      
+            <select id="most-like" name="mostLike" class="form-control" >
+              <option disabled selected value>Select an option</option>
+              <option value="computer">computer</option>
+              <option value="Cell phone">Cell phone</option>
+              <option value="ipad">ipad</option>
+              <option value="other">other</option>
+            </select>
+          </div>
+
+       <div class="form-group">
+          <p>Did you enjoy browsing our website ?</p>
+    
+          <label>
+            <input
+              name="user-recommend"
+              value="Of course"
+              type="radio"
+              class="input-radio"
+              checked
+            />Of course</label >
+    
+          <label>
+            <input
+              name="user-recommend"
+              value="not"
+              type="radio"
+              class="input-radio"
+            />No</label >
+         
+        </div>
+      
+      <div class="form-group">
+          <p>How long did you spend browsing our page?</p>
+    
+          <label>
+            <input
+              name="prefer"
+              value="30 minutes"
+              type="radio"
+              class="input-radio"
+            />30 minutes</label >
+        
+          <label>
+            <input
+              name="prefer"
+              value="60 minutes"
+              type="radio"
+              class="input-radio"
+            />60 minutes</label >
+         
+          <label><input
+            
+              name="prefer"
+              value="120 minutes"
+              type="radio"
+              class="input-radio"
+            />120 minutes</label>
+          
+          <label
+            ><input
+              name="prefer"
+              value="More"
+              type="radio"
+              class="input-radio"
+            />More</label >
+        </div>
+        
+        <div class="form-group">
+          <p>Do you have any advice for us?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your advice here..."
+          ></textarea>
+        </div>
+    
+        <div class="form-group">
+           <button type="submit" id="submit" class="submit-button" style="background-color:#b4b4b2; color: #fffffd;"> Submit</button>
+        </div>
+      </form>
+    </div>
+        
+    <div class="main-popup">
+    
+        <div class="popup">
+          <div class="popup-close">x</div>
+          <div class="popup-content">
+            <p>Thank you for taking time to help us imroving our business, you got <span style="color: red; font-weight: bolder;"> 20%</span> discount for your next purchase </p>
+            <a href="proje.html">Go Home</a>
+          </div>
+        </div>
+        
+      </div>
+
+       <script>
+        
+const button=document.querySelector('button');
+const mainPopup=document.querySelector('.main-popup');
+const close=document.querySelector('.popup-close');
+
+
+
+button.addEventListener('click',()=>{
+	
+    mainPopup.style.display='block';
+})
+
+
+close.addEventListener('click',()=>{
+    mainPopup.style.display='none';
+})
+
+const form=document.querySelector('.questionnaire');
+ form.addEventListener('submit',e=>{ 
+  e.preventDefault(); })
+
+
+       </script>
+
+<!-- Footer -->
+<footer>
+<div class="Footer" >
+  <div class="row"> 
+  <h5 style="text-align: center; padding-bottom: 6px;" > Quick Links </h5>
+  <ul class="footer-menu"> 
+    <li>
+      <a href=" "> About Us </a>
+    </li>
+    <li> 
+      <a href="contact.html"> Contact Us </a>
+    </li>
+  </ul>
+<hr>
+<div class="payment-method">
+
+  <img src="https://img.icons8.com/color/100/000000/visa.png"/>
+  <img src="https://img.icons8.com/color/100/000000/mastercard.png"/>
+  <img src="https://img.icons8.com/color/100/000000/bank-card-back-side.png"/>
+  <img src="https://img.icons8.com/color/100/000000/amex.png"/>
+  <img src="https://img.icons8.com/color/100/000000/unionpay.png"/>
+  <img src="https://img.icons8.com/color/100/00000/maestro.png"/>
+  <img src="https://img.icons8.com/color/100/000000/jcb.png"/>
+
+</div>
+</div>
+
+<div class="footer-copyright caption">
+<p class="copyright"> &copy; 2023, Riverox a river of contentment</p>
+</div>
+
+</div> 
+</footer>
+
+    <script src="javas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":"King Sofa",
+        "price": 200,
+        "image": "imges/NewArrive1.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Black Chair",
+        "price": 70,
+        "image": "imges/NewArrive2.jpg"
+    },
+    {
+        "id": 3,
+        "name":"Circular Mirror",
+        "price": 266,
+        "image": "imges/pathroom1.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Long Sofa",
+        "price": 200,
+        "image": "imges/NewArrive4.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Small cupboard",
+        "price": 300,
+        "image": "imges/NewArrive5.jpg"
+    },
+    {
+        "id": 6,
+        "name":"Small Plant",
+        "price": 35,
+        "image": "imges/kitchen6.jpg"
+    },
+    {
+        "id": 7,
+        "name":"Pink Plant",
+        "price": 30,
+        "image": "imges/FeaturedProd7.jpg" 
+    },
+    {
+        "id": 8,
+        "name":"Small Vasa",
+        "price": 33,
+        "image": "imges/FeaturedProd6.jpg"
+    }
+    
+]

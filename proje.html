@@ -1,0 +1,435 @@
+<!--
+Wep Tek. 
+Ad : Maha Al-sanea 
+Ogrenci Num : B211200563
+E-ticaret sitesi 
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Riverstore | Home</title>
+    <link rel="stylesheet" type="text/css" href="proje.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/823f9e734b.js" crossorigin="anonymous"></script>  <!-- FONT AWSOME LINK " ICONS icin " -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
+
+    <!-- Slider card icin gereken linkler : -->
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css'>
+
+  </head>
+
+  <body style="background: #FBFBF9;">
+
+
+    <!-- 1. kayan metin : -->
+    <div class="custom-marquee " role="region" >
+       
+            <a href="{{ section.settings.link }}" class=""> <!--değişkenine göre belirlenir.-->
+         
+              <div class="track ">
+                <span class="content">  Welcome to River Store   </span>
+                <span class="content"> 50% discount for the first order</span>
+                <span class="content "> High quality </span>
+                <span class="content "> Free worldwide shipping </span>
+                <span class="content "> Discover Now </span>
+                <span class="content">  Welcome to River Store  </span>
+                <span class="content">  50% discount for the first order </span>
+                <span class="content "> High quality </span>
+                <span class="content "> Free worldwide shipping </span>
+                <span class="content "> Discover Now </span>
+                
+              </div>
+              
+            </a>
+         
+      </div>
+    <script>
+    var marquees = document.getElementsByClassName("marquee-text");
+    for (let i = 0; i < marquees.length; i++) {
+       // console.log(marquees.item(i));?
+      let str = marquees.item(i).innerHTML;
+      let improvedText = str.replaceAll("|", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;")
+      console.log(improvedText)
+      marquees.item(i).innerHTML = improvedText
+    }
+    </script>
+    
+    <!-- Time -->
+    <div class="clock-head">
+      <div class="clock-container">
+    <div class="clock"></div>
+  </div>
+</div>
+ 
+  <script>
+  const clock=document.querySelector('.clock');
+
+
+    const tick = () =>{
+    const now =new Date();
+    const hours=now.getHours();
+    const minutes=now.getMinutes();
+    const seconds=now.getSeconds();
+
+   const html =
+   `
+   <span>${hours}</span> :
+   <span>${minutes}</span> :
+   <span>${seconds}</span> 
+   `
+   clock.innerHTML=html;
+
+
+};
+
+
+setInterval(tick, 10);
+</script>
+
+  <!-- 2. Navbar : -->
+
+    <section class="header">
+        <div class="row" > 
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <!-- class="img-thumbnail"  <-- i removed it from the line of img down here -->
+              <img class="navbar-brand" src="imges/Riveroxlogo.PNG" alt="brand" >
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href= "proje.html" > Home </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="furniture.html"> Furniture </a></li>
+                      <li><a class="dropdown-item" href="kitchen.html"> Kitchen </a></li>
+                      <li><a class="dropdown-item" href="Bathroom.html"> Bathroom </a></li>
+                      <li> <hr> <a class="dropdown-item" href="newProd.html"> New Arrival </a></li>
+                    </ul>
+                  </li>
+                </ul>
+               <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2 " type="search" placeholder="Search" name="Search">
+                  <button class="btn btn-outline-dark" type="submit"> Search </button>
+                </form>-->
+              </div>
+            </div>
+          </nav>
+      </div>
+    </div>
+    
+    <!-- 3. Banner img :-->
+
+    <div class="banner-area"></div>
+    </section>
+  
+
+   <!-- 4. AboutUs Card --> 
+
+   <div class="card mt-5"  style="background-color: #FBFBF9;">
+        <div class="row g-0">
+          <div class="col-md-4 ">
+            <img src="imges/AboutUs.png" class="img-fluid rounded-start" alt="AboutUs">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" style="background-color: #FBFBF9;">
+              <h5 class="card-title" style="color: #445E5B;">About Us</h5>
+              <p class="card-text">Riverox are two brothers who began their journey after being estranged from their homes in order to seek knowledge in the beloved country of Turkey, where we went through various experiences and adventures that made us what we are now to begin building our own personality and our own brand.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+   <!-- 5. Slide Show -->  
+    <!--
+   <div class="slider">
+    <figure>
+        <div class="slide">
+            <!-- <h1> title? </h1> -->
+          <!--  <img src="imges/SlideShow1.jpg" alt="">
+        </div>
+        <div class="slide">
+            <!-- <h1> title? </h1> -->
+         <!--   <img src="imges/SlideShow2.jpg" alt="">
+        </div>
+        <div class="slide">
+             <!-- <h1> title? </h1> -->
+          <!--  <img src="imges/SlideShow3.jpg" alt="">
+        </div>
+        <div class="slide">
+             <!-- <h1> title? </h1> -->
+          <!---  <img src="imges/SlideShow4.jpg" alt="">
+        </div>
+    </figure>
+</div>  -->
+
+<!-- Featureed Product -->
+
+<div class="wrapper">
+  <div class="row" > 
+   <h2 style="text-align: left; padding-top: 30px; margin-left: 60px; margin-top: 40px; color: #445E5B;
+   padding-bottom: 15px;"> Most Populer<h2> 
+    <div class="carousel">
+      <div>
+        <div class="card-2">
+          <div class="card-header">
+            <img src="imges/FeaturedProd1.jpg">
+          </div>
+          <div class="card-body">
+            <div class="card-content">
+              <div class="card-title2">Brown Table</div>
+              <div class="card-text2">
+                <p> acomfortable table for dinner os studying </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+      <div>
+        <div class="card-2">
+          <div class="card-header">
+            <img src="imges/furniture2.jpg">
+          </div>
+          <div class="card-body">
+            <div class="card-content">
+              <div class="card-title2">Small Plant</div>
+              <div class="card-text2">
+                <p>Simple design for livingroom , add some cute tuoches for your home</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card-2">
+          <div class="card-header">
+            <img src="imges/Kitchen3.jpg">
+          </div>
+          <div class="card-body">
+            <div class="card-content">
+              <div class="card-title2"> Pillows</div>
+              <div class="card-text2">
+                <p>Comfortable medium-sized cotton pillows that suit all types of sofas</p>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div>
+        <div class="card-2">
+          <div class="card-header">
+            <img src="imges/pathroom4.jpg">
+          </div>
+          <div class="card-body">
+            <div class="card-content">
+              <div class="card-title2">Wall Painting</div>
+              <div class="card-text2">
+                <p>High quality oil painting with a wooden frame and a glass screen, lightweight and beautiful</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div>
+        <div class="card-2">
+          <div class="card-header">
+            <img src="imges/NewArrive1.jpg">
+          </div>
+          <div class="card-body">
+            <div class="card-content">
+              <div class="card-title2">White chair</div>
+              <div class="card-text2">
+                <p>Comfortable chair that fits every angle. Made of genuine cotton and has a suitable curvature for the back</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card-2">
+          <div class="card-header">
+            <img src="imges/FeaturedProd6.jpg">
+          </div>
+          <div class="card-body">
+            <div class="card-content">
+              <div class="card-title2"> white painting</div>
+              <div class="card-text2">
+                <p>A 4*4 white wall painting suit every decor , oil paintin with a wooden frame</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    </div>
+    </div>
+
+    <!-- Script link for this part : -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js'></script>
+
+    <script id="rendered-js" >
+      $(document).ready(function () {
+        $('.carousel').slick({
+          speed: 500,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          dots: true,
+          centerMode: true,
+          responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+              // centerMode: true,
+            } },
+      
+      
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              dots: true,
+              infinite: true } },
+      
+      
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+              infinite: true,
+              autoplay: true,
+              autoplaySpeed: 2000 } }] });
+      
+      
+      
+      });
+      // sourceURL=pen.js
+          </script>
+
+   <!-- Advanges imge -->
+    <div class="Advantages-area"></div> 
+  
+   <!-- FAQs collaps -->
+
+   <main class="main">
+    <div class="container">
+      <div class="accordion">
+        <h4 style="text-align: center; color: #445E5B; padding-bottom: 6px;"> FAQs </h4>
+        <div class="accordion-item">
+          <h3 class="title">
+            <i class="fa-regular fa-circle-question"></i>
+            <span>Do you offer Free Shipping?</span>
+            <i class="fas fa-chevron-down"></i>
+          </h3>
+          <p class="paragraph">
+            Yes , We provide you with an enjoyable purchasing journey without any shipping fees.
+          </p>
+        </div>
+        <br>
+        <div class="accordion-item">
+          <h3 class="title">
+            <i class="fa-regular fa-circle-question"></i>
+            <span>Security ?</span>
+            <i class="fas fa-chevron-down"></i>
+          </h3>
+          <p class="paragraph">
+            Our web store is secured with SSL certificate. This means the information you input is encrypted and it will not be available for third parties. 
+          </p>
+        </div>
+        <br>
+        <div class="accordion-item">
+          <h3 class="title">
+            <i class="fa-regular fa-circle-question"></i>
+            <span>How can I order?</span>
+            <i class="fas fa-chevron-down"></i>
+          </h3>
+          <p class="paragraph">
+            We will oppen soon , stay tuned to receive all updates
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script id="rendered-js">
+    const accordionItem = document.querySelectorAll(".accordion-item");
+
+accordionItem.forEach((el) =>
+  el.addEventListener("click", () => {
+    if (el.classList.contains("active")) {
+      el.classList.remove("active");
+    } else {
+      accordionItem.forEach((el2) => el2.classList.remove("active"));
+      el.classList.add("active");
+    }
+  })
+);
+  </script>
+
+  <!-- Anket Link : -->
+ 
+  <div class="form-container">
+    <h4 style="text-align: center; color: #445E5B; padding-bottom: 6px; margin-top: 60px;"> get 20% gift discount </h4>
+    <h6 style="text-align: center; color: #445E5B; padding-bottom: 6px;"> Fill out the questionnaire to get 20% gift discount </h6>
+    <button style="color: #445E5B;" type="button" onclick="location.href='form.html' "> Fill Now </button>
+  </div>
+
+   <br> <br> <br>
+
+  <!-- Footer -->
+ <footer>
+  <div class="Footer" >
+    <div class="row"> 
+    <h5 style="text-align: center; padding-bottom: 6px;" > Quick Links </h5>
+    <ul class="footer-menu"> 
+      <li>
+        <a href="aboutUs.html"> About Us </a>
+      </li>
+      <li> 
+        <a href="contact.html"> Contact Us </a>
+      </li>
+    </ul>
+ <hr>
+  <div class="payment-method">
+
+    <img src="https://img.icons8.com/color/100/000000/visa.png"/>
+    <img src="https://img.icons8.com/color/100/000000/mastercard.png"/>
+    <img src="https://img.icons8.com/color/100/000000/bank-card-back-side.png"/>
+    <img src="https://img.icons8.com/color/100/000000/amex.png"/>
+    <img src="https://img.icons8.com/color/100/000000/unionpay.png"/>
+    <img src="https://img.icons8.com/color/100/00000/maestro.png"/>
+    <img src="https://img.icons8.com/color/100/000000/jcb.png"/>
+
+  </div>
+</div>
+
+<div class="footer-copyright caption">
+  <p class="copyright"> &copy; 2023, Riverox a river of contentment</p>
+</div>
+
+</div> 
+</footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <script src="app.js"></script>
+  </body>
+</html>
+
